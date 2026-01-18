@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".", //start resolving from the root folder
+    "paths": {
+      "#*": ["src/*"] //map # to the src folder
+    }
+  },
+  "include": ["src"] //only type chckk files in the src folder
+}
