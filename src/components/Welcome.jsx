@@ -23,7 +23,7 @@ const renderText = (text, className, baseWeight = 400) => {
 
 // ✅ Setup hover animations for a container (title/subtitle)
 const setupTextHover = (container, type) => {
-  if (!container) return;
+  if (!container) return () => {}; //prevents invoke errors if container doesnt exist
 
   // ✅ shared scope for letters for both handlers
   const letters = container.querySelectorAll("span");
