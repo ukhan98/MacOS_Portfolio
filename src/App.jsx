@@ -1,7 +1,12 @@
-import Navbar from "#components/Navbar";
+import { Navbar, Welcome } from "#components"; //dont need multiple import lines because of index.js in the components folder
 
 const App = () => {
-  return ( <main> <Navbar/> </main> );
-  }; 
+  return (
+    <main>
+      <Navbar />
+      <Welcome />
+    </main>
+  );
+};
 
-export default App;                                   
+export default App;
